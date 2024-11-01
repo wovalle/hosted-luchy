@@ -1,0 +1,11 @@
+
+@host=http://localhost:5173
+
+
+POST {{host}}/api/v0/ingest
+Content-Type: application/json
+x-luchy-token: 12345
+
+{
+    "foo": "bar"
+}
