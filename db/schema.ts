@@ -1,7 +1,7 @@
-import { pgTable, serial, text, timestamp } from "drizzle-orm/pg-core";
+import { jsonb, pgTable, serial, timestamp } from "drizzle-orm/pg-core";
 
 export const messages = pgTable("messages", {
   id: serial("id").primaryKey(),
-  data: text("data"),
+  data: jsonb("data").notNull(),
   createdAt: timestamp("created_at").defaultNow(),
 });

@@ -1,5 +1,7 @@
 
-@host=http://localhost:5173
+# @host=http://localhost:5173
+
+@host=https://luchy.willy.im
 
 
 POST {{host}}/api/v0/ingest
